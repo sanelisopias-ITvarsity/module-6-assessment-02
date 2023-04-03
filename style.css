@@ -1,0 +1,319 @@
+/* *************************************************************************** */
+/* Universal styles                                                            */
+/* *************************************************************************** */
+body{
+    margin: o;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #363636;
+}
+
+p{
+    line-height: 190%;
+}
+
+a{
+    text-decoration: none;
+    color:teal;
+}
+/* *************************************************************************** */
+/* HEADER                                                                      */
+/* *************************************************************************** */
+#menu{
+    background-color: skyblue;
+    height: 100px;
+}
+body {
+  /* Metal by Etienne Martin. https://unsplash.com/photos/v6uiP2MD6vs */
+  --metal-tex: url(https://images.unsplash.com/photo-1501166222995-ff31c7e93cef?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTcyMDc2NzU&ixlib=rb-1.2.1&q=80);
+  
+  background: black;
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+
+a {
+  color: skyblue;
+  font-weight: bold;
+}
+
+.main {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.metal {
+  position: relative;
+  margin: 15vh auto;
+  color: transparent;
+  font-family: impact, sans-serif;
+  font-size: 25VW;
+  letter-spacing: 0.05em;
+  background-image: var(--metal-tex);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.texture,
+.texture::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+  
+.texture {
+  background-image: linear-gradient(to bottom, blue, white 50%, red 65%, white);
+  background-attachment: fixed;
+  mix-blend-mode: color-dodge;
+}
+
+.texture::after {
+  content: '';
+  background-image: var(--metal-tex);
+  background-size: cover;
+  filter: saturate(0) brightness(0.8) contrast(4);
+  mix-blend-mode: multiply;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100px;
+    color: white;
+    
+    padding: 0 40px;
+    border: none;
+    display: block;
+}
+
+#menu a:hover{
+    background-color: blue;
+}
+
+/* *************************************************************************** */
+/* Menu                                                                        */
+/* *************************************************************************** */
+
+#header{
+    padding: 60px 0px 40px 0;
+     text-align: center;
+     background-color: white;
+}
+
+#header h1{
+    letter-spacing: 0.1em;
+    font-size: 44px;
+    color: white;
+}
+
+#header p{
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+/* *************************************************************************** */
+/* BANNER                                                                      */
+/* *************************************************************************** */
+
+#banner{
+    height: 300px;
+}
+
+#banner img{
+    width: 100%;
+    height: 300px;
+}
+
+/* *************************************************************************** */
+/* PAGE                                                                        */
+/* *************************************************************************** */
+
+
+
+#page h2{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    color: skyblue;
+    text-align: center;
+}
+
+#page h1{
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: skyblue;
+}
+
+/* CONTENT */
+
+#content{
+    float: left;
+    width: 70%;
+}
+
+/* SIDEBAR */
+
+#sidebar{
+    float: right;
+    width: 25%;
+}
+
+/* LISTS */
+
+ul.styled{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.styled li{
+    border-top: solid 1px #e5e5e5;
+    padding: 14px 0px;
+}
+
+/* *************************************************************************** */
+/* FOOTER                                                                      */
+/* *************************************************************************** */
+
+#footer{
+    width: 100%;
+    height: 340px;
+    background-color: #1e1b1a;
+    padding-top: 25px;
+    padding-left: 22px;
+    clear: both;
+}
+
+#footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+#footer p{
+    color: #adadad;
+}
+
+#footer a{
+    color: #adadad;
+}
+
+#box1{
+    float: left;
+    width: 30%;
+    padding-right: 30px;
+}
+
+#box2{
+    float: left;
+    width: 30%;
+    padding-right: 30px;
+}
+
+
+#box3{
+    float: right;
+    width: 30%;
+    padding-left: 30px;
+}
+
+/* *************************************************************************** *
+/* COPYRIGHT BAR                                                              */
+/* ****************************************************************************/
+
+#copyright{
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: skyblue;
+    padding-top: 55px;
+    clear: both;
+}
+
+#copyright p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: 
+}
+
+/* *************************************************************************** */
+/* GALLERY                                                                     */
+/* *************************************************************************** */
+
+#gallery img{
+	width:120px;
+	margin:12px;
+	-moz-transition: -moz-transform 0.5s ease-in;
+	-webkit-transition: -webkit-transform 0.5s ease-in;
+	-o-transition: -o-transform 0.5s ease-in;
+}
+
+#gallery img:hover{
+	-moz-transform: scale(3);
+	-webkit-transform: scale(3);
+	-o-transform: scale(3);
+ }
+
+
+
+
+
+
+
+
+
+
+<SPAN STYLE="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f5/Cool_waters_of_the_turquoise_blue_Aegean_Sea_-_Ayval%C4%B1k_-_panoramio.jpg">NoBoringHighlight…</SPAN>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
